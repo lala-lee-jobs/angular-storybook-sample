@@ -5,9 +5,9 @@ import Button from './button.component';
 export default {
   title: 'Example/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+//   argTypes: {
+//     backgroundColor: { control: 'color' },
+//   },
 } as Meta;
 
 const Template: Story<Button> = (args: Button) => ({
@@ -37,3 +37,18 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+
+export const BlackOutline = Template.bind({});
+BlackOutline.args = {
+  label: 'Black Outline Button',
+  outline: true,
+  outlineColor: 'black',
+};
+
+export const GreenOutline = Template.bind({});
+GreenOutline.args = {
+  label: 'Green Outline Button',
+  outline: true,
+  outlineColor: 'green',
+};
+``
